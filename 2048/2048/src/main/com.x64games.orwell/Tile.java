@@ -1,4 +1,4 @@
-package com.tpcstld.twozerogame;
+package com.x64games.orwell;
 
 public class Tile extends Cell {
     private final int value;

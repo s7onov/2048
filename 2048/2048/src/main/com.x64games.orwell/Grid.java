@@ -1,4 +1,4 @@
-package com.tpcstld.twozerogame;
+package com.x64games.orwell;
 
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ public class Grid {
     }
 
     private ArrayList<Cell> getAvailableCells() {
-        ArrayList<Cell> availableCells = new ArrayList<>();
+        ArrayList<Cell> availableCells = new ArrayList<Cell>();
         for (int xx = 0; xx < field.length; xx++) {
             for (int yy = 0; yy < field[0].length; yy++) {
                 if (field[xx][yy] == null) {

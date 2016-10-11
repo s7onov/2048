@@ -1,4 +1,4 @@
-package com.tpcstld.twozerogame;
+package com.x64games.orwell;
 
 class AnimationCell extends Cell {
     public final int[] extras;

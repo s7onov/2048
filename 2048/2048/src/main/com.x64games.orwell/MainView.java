@@ -1,4 +1,4 @@
-package com.tpcstld.twozerogame;
+package com.x64games.orwell;
 
 import android.content.Context;
 import android.content.res.Resources;

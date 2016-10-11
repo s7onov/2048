@@ -1,13 +1,14 @@
-package com.tpcstld.twozerogame;
+package com.x64games.orwell;
 
+import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.app.ActionBarActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.Window;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     private static final String WIDTH = "width";
     private static final String HEIGHT = "height";

@@ -1,10 +1,10 @@
-package com.tpcstld.twozerogame;
+package com.x64games.orwell;
 
 import java.util.ArrayList;
 
 
 public class AnimationGrid {
-    public final ArrayList<AnimationCell> globalAnimation = new ArrayList<>();
+    public final ArrayList<AnimationCell> globalAnimation = new ArrayList<AnimationCell>();
     private final ArrayList<AnimationCell>[][] field;
     private int activeAnimations = 0;
     private boolean oneMoreFrame = false;
@@ -14,7 +14,7 @@ public class AnimationGrid {
 
         for (int xx = 0; xx < x; xx++) {
             for (int yy = 0; yy < y; yy++) {
-                field[xx][yy] = new ArrayList<>();
+                field[xx][yy] = new ArrayList<AnimationCell>();
             }
         }
     }
@@ -30,7 +30,7 @@ public class AnimationGrid {
     }
 
     public void tickAll(long timeElapsed) {
-        ArrayList<AnimationCell> cancelledAnimations = new ArrayList<>();
+        ArrayList<AnimationCell> cancelledAnimations = new ArrayList<AnimationCell>();
         for (AnimationCell animation : globalAnimation) {
             animation.tick(timeElapsed);
             if (animation.animationDone()) {

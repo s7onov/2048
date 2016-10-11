@@ -1,4 +1,4 @@
-package com.tpcstld.twozerogame;
+package com.x64games.orwell;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;

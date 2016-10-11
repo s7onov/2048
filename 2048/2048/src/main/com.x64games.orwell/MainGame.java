@@ -1,4 +1,4 @@
-package com.tpcstld.twozerogame;
+package com.x64games.orwell;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -256,7 +256,7 @@ public class MainGame {
     }
 
     private List<Integer> buildTraversalsX(Cell vector) {
-        List<Integer> traversals = new ArrayList<>();
+        List<Integer> traversals = new ArrayList<Integer>();
 
         for (int xx = 0; xx < numSquaresX; xx++) {
             traversals.add(xx);
@@ -269,7 +269,7 @@ public class MainGame {
     }
 
     private List<Integer> buildTraversalsY(Cell vector) {
-        List<Integer> traversals = new ArrayList<>();
+        List<Integer> traversals = new ArrayList<Integer>();
 
         for (int xx = 0; xx < numSquaresY; xx++) {
             traversals.add(xx);
