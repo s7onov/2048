@@ -295,7 +295,8 @@ public class MainView extends View {
                 if (currentTile != null) {
                     //Get and represent the value of the tile
                     int value = currentTile.getValue();
-                    int index = log2(value);
+                    int index = 12;
+                    if(value != 3 && value != 5) index = log2(value);
 
                     //Check for any active animations
                     ArrayList<AnimationCell> aArray = game.aGrid.getAnimationCell(xx, yy);

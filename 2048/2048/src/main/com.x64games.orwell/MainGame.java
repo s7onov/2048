@@ -7,6 +7,7 @@ import android.preference.PreferenceManager;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class MainGame {
 
@@ -183,7 +184,13 @@ public class MainGame {
                     Tile next = grid.getCellContent(positions[1]);
 
                     if (next != null && next.getValue() == tile.getValue() && next.getMergedFrom() == null) {
-                        Tile merged = new Tile(positions[1], tile.getValue() * 2);
+                        int mvalue = tile.getValue() * 2; // by def
+                        if(tile.getValue() == 2) {
+                            Random rnd = new Random();
+                            if (rnd.nextInt(2) > 0) mvalue = 3;
+                            else mvalue = 5;
+                        }
+                        Tile merged = new Tile(positions[1], mvalue);
                         Tile[] temp = {tile, next};
                         merged.setMergedFrom(temp);
 
